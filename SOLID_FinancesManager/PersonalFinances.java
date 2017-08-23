@@ -15,12 +15,19 @@ public class PersonalFinances {
 	Date purchaseDate = new Date();
 	
 	public void start() throws FileNotFoundException, IOException{
+		//Obtaining and printing from console
 		Day today = new Day();
-		today.getRegisterData2();
+		today.getRegisterData();
+		today.formatting(0);
+		today.printResume();
 		today.formatting(1);
 		today.printResume();
-		today.writeResume();
-//		today.getRegisterData2();
+		//Obtaining and printing from files
+		Day today2 = new Day();
+		today2.getRegisterData2();
+		today2.formatting(0);
+		today2.writeResume();
+
 	}
 
 }

@@ -1,7 +1,7 @@
-Purchases of 08-234-2017
+Purchases of 234/08/17
 
-Min: Y20
-Max: Y350
-Average: Y106.0
+Min: $20
+Max: $350
+Average: $106.0
 
 Frequent Payee: Oxxo
