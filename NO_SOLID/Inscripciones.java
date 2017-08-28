@@ -2,26 +2,29 @@ package NO_SOLID;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
+/**
+ *
+ * @author Toatzin Padilla
+ */
 public class Inscripciones {
 	private Alumno alumno = new Alumno();
 	private ArrayList<Subject> subjects = new ArrayList<Subject>();
-	
+
 	public Inscripciones(){
 		this.obtainSubjects();
 	}
-	
+
 	public void start(){
 		this.obtainStudent();
 		this.startEnrollment(this.alumno, this.subjects);
 	}
-	
+
 	private void obtainSubjects() {
 		this.subjects.add(new Subject("Maths", 4));
 		this.subjects.add(new Subject("OOPs", 5));
 		this.subjects.add(new Subject("SoftwareDesigns", 6));
 	}
-	
+
 	private void obtainStudent(){
 		System.out.println("-----SCHEDULE-TEC-----");
 		Scanner scanner = new Scanner(System.in);
@@ -32,11 +35,11 @@ public class Inscripciones {
 	    alumno.setName(name);
 	    alumno.setSemester(semester);
 	}
-	
+
 	private void startEnrollment(Alumno alumno, ArrayList<Subject> subjects){
 		Scanner scanner = new Scanner(System.in);
 		String answer;
-		
+
 		System.out.println("Which subject you like to enroll?");
 		for(Subject s : subjects){
 		    System.out.println("\t" + s.getName());
@@ -70,7 +73,7 @@ public class Inscripciones {
 			startEnrollment(alumno, sc);
 		}
 	}
-	
+
 	private void inscriptionResume(Alumno a){
 		System.out.println();
 	    System.out.println("------ Enrollment " + a.getName() + "-------");

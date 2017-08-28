@@ -1,9 +1,12 @@
 package NO_SOLID;
-
+/**
+ *
+ * @author Toatzin Padilla
+ */
 public class Subject implements ISubject{
 	private String name;
 	private int semester;
-	
+
 	public Subject(String name, int semester) {
 		this.name = name;
 		this.semester = semester;
@@ -29,7 +32,7 @@ public class Subject implements ISubject{
 		}else{
 			return false;
 		}
-		
+
 	}
 
 }

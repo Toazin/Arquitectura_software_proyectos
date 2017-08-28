@@ -1,5 +1,8 @@
 package NO_SOLID;
-
+/**
+ *
+ * @author Toatzin Padilla
+ */
 public class main_solid {
 
 	public static void main(String[] args) {

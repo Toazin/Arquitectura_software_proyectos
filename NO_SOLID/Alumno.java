@@ -2,18 +2,21 @@ package NO_SOLID;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
-
+/**
+ *
+ * @author Toatzin Padilla
+ */
 public class Alumno implements IAlumno{
 	String name;
 	int semester;
 	private LinkedList<Subject> enrollment = new LinkedList<Subject>();
 	public Alumno(){
-		
+
 	}
 	@Override
 	public void setName(String name) {
 		this.name = name;
-		
+
 	}
 	@Override
 	public void setSemester(int semester) {
@@ -30,7 +33,7 @@ public class Alumno implements IAlumno{
 	}
 	@Override
 	public int getSemester() {
-		
+
 		return this.semester;
 	}
 	@Override
